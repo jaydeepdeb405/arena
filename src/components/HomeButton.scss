@@ -1,0 +1,37 @@
+@import '~../colors';
+
+.home-button {
+    position: fixed;
+    background-color: $arenaBlue;
+    height: 40px;
+    width: 40px;
+    left: 30px;
+    top: 30px;
+    border: 1px solid dodgerblue;
+    box-shadow: 3px 3px 15px grey;
+    border-radius: 50%;
+    z-index: 10;
+    padding: 8px 10px;
+    cursor: pointer;
+    color: black;
+    
+    .bi {
+        font-size: 22px;
+        position: absolute;
+        left: 8px;
+    }
+}
+
+.home-button:hover {
+    background-color: #428BCA;
+}
+
+@media only screen and (max-width: 768px) {
+    .home-button {
+        left: 0;
+        right: 0;
+        bottom: 30px;
+        top: auto;
+        margin: 0 auto;
+    }
+}

@@ -1,0 +1,65 @@
+.swiper-container {
+    width: 100%;
+    padding: 50px 0;
+    height: 75vh;
+    margin-top: 10vh;
+}
+
+.swiper-slide {
+    background-size: cover;
+    height: 400px !important;
+    width: 300px !important;
+    box-shadow: 1px 3px 3px rgba(0, 0, 0, 0.2);
+    border: 3px solid grey;
+    box-sizing: border-box;
+    background-position-x: center;
+    /*background-position-y: top;*/
+}
+
+.swiper-slide .label {
+    position: absolute;
+    bottom: 0;
+    text-align: right;
+    right: 5px;
+    color: white;
+    font-size: 2em;
+    font-family: 'Comic Sans MS', cursive;
+    text-shadow: 3px 3px 20px black, -2px 1px 30px black;
+}
+
+.swiper-slide::after {
+    content: "";
+    background-image: inherit;
+    background-position: bottom;
+    background-size: cover;
+    transform: scaleY(-1);
+    width: inherit;
+    height: 40%;
+    position: absolute;
+    bottom: -42%;
+    opacity: 0.1;
+    left: -2%
+}
+
+@media only screen and (max-width: 768px) {
+    .swiper-container {
+        margin-top: 20vh;
+    }
+
+    .swiper-slide {
+        height: 300px !important;
+        width: 225px !important;
+    }
+
+}
+
+@media only screen and (max-height: 600px) {
+    .swiper-slide {
+        height: 200px !important;
+        width: 160px !important;
+    }
+
+    .swiper-slide .label {
+        font-size: 1.5em;
+    }
+}

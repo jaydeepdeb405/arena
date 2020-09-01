@@ -1,0 +1,27 @@
+/* global styles go here*/
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+
+body {
+    margin: 0;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+@font-face {
+    font-family: pfs-bold;
+    src: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/142996/PFSquareSansPro-Bold.otf');
+}
+
+body {
+    background-image: url('images/ArenaBackground.jpg');
+    background-position: center;
+    background-size: cover;
+    font-family: pfs-bold !important;
+}
+
+.loading {
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+}

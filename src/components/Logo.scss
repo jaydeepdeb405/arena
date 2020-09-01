@@ -1,0 +1,15 @@
+.heading {
+    text-align : center;
+    font-size  : 6.3em;
+    color      : darkorange;
+    font-weight: bolder;
+    padding-top: 10px;
+}
+
+
+@media only screen and (max-width: 768px) {
+    .heading {
+        font-size  : 7rem;
+        padding-top: 50px;
+    }
+}

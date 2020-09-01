@@ -1,0 +1,21 @@
+.arena-home {
+    display: flex;
+    flex-flow: column;
+    height: 100vh;
+    justify-content: space-between;
+}
+
+.main-menu {
+    width: max-content;
+    margin: auto;
+}
+
+.menuStyle {
+    width: 8em;
+    font-size: 20px;
+    font-family: pfs-bold;
+}
+
+.listPadding {
+    padding: 3px;
+}

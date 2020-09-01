@@ -1,0 +1,143 @@
+.menu-space {
+    height: 180px;
+    width: 22%;
+    margin: 20px 1%;
+    perspective: 1000px;
+}
+
+.menu-item {
+    height: 100%;
+    font-size: 1.3em;
+    text-align: center;
+    position: relative;
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+    cursor: pointer;
+    margin: 0 auto;
+    background-color: #5cb85c;
+    border: 2px solid green;
+}
+
+.menu-face {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    backface-visibility: hidden;
+}
+
+.menu-item .level {
+    color: white;
+    box-shadow: 0 5px 38px #819db0, 0 6px 12px #819db0;
+    line-height: 180px;
+}
+
+.menu-item:hover .level {
+    font-size: 1.3em;
+}
+
+.menu-item.is-flipped {
+    transform: rotateY(180deg);
+}
+
+.locked {
+    opacity: 0.6;
+}
+
+.lock-icon {
+    z-index: 5;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    left: 0;
+    padding: 20px;
+}
+
+@import '~../colors';
+
+.menu-item .difficulty {
+    display: flex;
+    flex-direction: column;
+    transform: rotateY(180deg);
+    box-shadow: 0 5px 38px #819db0, 0 6px 12px #819db0;
+}
+
+.menu-item .difficulty .difficulty-wrapper {
+    position: relative;
+    height: 33.33%;
+    padding-top: 6px;
+    line-height: 45px;
+    font-size: 0.8em;
+}
+
+.menu-item .difficulty .difficulty-wrapper span {
+    color: black;
+}
+
+.menu-item .difficulty .difficulty-wrapper img {
+    height: 1.4em;
+}
+
+.menu-item .difficulty .difficulty-wrapper:hover span {
+    font-size: 1.3em;
+}
+
+.menu-item .difficulty div.difficulty-wrapper:nth-child(1) {
+    background-color: $arenaGreen;
+}
+
+.menu-item .difficulty div.difficulty-wrapper:nth-child(2) {
+    background-color: $arenaYellow;
+}
+
+.menu-item .difficulty div.difficulty-wrapper:nth-child(3) {
+    background-color: $arenaRed;
+}
+
+.difficulty .lock-icon {
+    padding: 0;
+    font-size: 1.8em;
+}
+
+@media only screen and (max-width: 768px) {
+
+    .menu-space {
+        width: 98%;
+        height: 65px;
+        margin: 12px 1%;
+    }
+
+    .menu-item .level {
+        line-height: 60px;
+    }
+
+    .menu-item .level:hover {
+        font-size: 1em;
+    }
+
+    .menu-face {
+        box-shadow: none !important;
+    }
+
+    .menu-item.is-flipped {
+        transform: rotateX(180deg);
+    }
+
+    .lock-icon {
+        padding: 0;
+    }
+
+    .menu-item .difficulty {
+        flex-direction: row;
+        transform: rotateX(180deg);
+    }
+
+    .menu-item .difficulty .difficulty-wrapper {
+        width: 33.33%;
+        height: 100%;
+    }
+
+    .menu-item .difficulty .difficulty-wrapper:hover {
+        font-size: 0.8em;
+    }
+
+}

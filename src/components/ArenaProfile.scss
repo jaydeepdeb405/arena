@@ -1,0 +1,154 @@
+.profile {
+  margin-top: 30px;
+  height: 70vh;
+  width: 100%;
+  color: white;
+  margin: 15vh 15%;
+  width: 70%;
+}
+
+.profile .profile-tabs {
+  display: flex;
+  padding: 0;
+  margin: 0;
+
+  li {
+    margin-right: 10px;
+    padding: 1.5vh 2vw;
+    border-radius: 5px 5px 0 0;
+    cursor: pointer;
+  }
+
+  li:nth-of-type(1) {
+    background-color: #4CAF50;
+  }
+
+  li:nth-of-type(2) {
+    background-color: #5aafee;
+  }
+
+  li:nth-of-type(3) {
+    background-color: #FF5722;
+  }
+}
+
+.profile .profile-content {
+  height: 50vh;
+  transition: background 0.4s;
+  border-radius: 0 5px 5px 5px;
+  box-shadow: 2px 2px 15px grey;
+
+  ul {
+    height: 100%;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-flow: column;
+    justify-content: space-evenly;
+    margin: auto 10%;
+    font-size: 1.4em;
+    font-family: monospace;
+    text-shadow: 1px 2px 2px black;
+  }
+
+  .excellence-label {
+    margin-bottom: 10px;
+  }
+
+  #nickname {
+    display: block;
+    width: 100%;
+    border-radius: 5px;
+    background: none;
+    border: 2px solid white;
+    font-family: pfs-bold;
+    color: darkorange;
+    text-shadow: 1px 1px 3px black;
+    box-shadow: 0px 2px 10px slategrey;
+    padding-left: 10px;
+  }
+
+  #nickname:focus {
+    outline: none;
+  }
+}
+
+.profile .profile-content .excellence-bar {
+  height: 5px;
+  width: 100%;
+  background-color: grey;
+  border-radius: 5px;
+  box-shadow: 1px 2px 2px black;
+
+  .user-excellence {
+    width: 0%;
+    height: 5px;
+    border-radius: 5px;
+    background-color: white;
+    animation: grow 0.4s linear forwards;
+  }
+}
+
+.profile .profile-content .loading-profile-content {
+  text-align: center;
+  padding-top: 15vh;
+}
+
+.profile .profile-content .challenged-by-card {
+  display: flex;
+  width: 100%;
+  justify-content: space-evenly;
+}
+
+.profile .profile-content .challenged-by-avatar {
+  height: 45px;
+  width: 45px;
+  border-radius: 50%;
+  box-shadow: 2px 2px 5px black;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.profile .profile-content .challenged-by-avatar div {
+  font-size: 1.4em;
+  text-align: center;
+  margin-top: 4px;
+  color: white;
+}
+
+.profile .profile-content .accept-btn {
+  box-shadow: 2px 2px 5px;
+  background-color: white;
+  color: #696969;
+  font-size: 1em;
+  font-family: monospace;
+  font-weight: 600;
+}
+
+.profile .profile-content ul .sfx {
+  display: flex;
+  .custom-switch {
+    width: 60%;
+  }
+  .custom-select {
+    width: 40%;
+  }
+}
+
+.profile .profile-content .accept-btn:hover {
+  background-color: #ffe4c4;
+}
+
+@keyframes grow {
+  from {
+    width: 0%;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .profile {
+    margin: 15vh 0;
+    width: 100%;
+  }
+}

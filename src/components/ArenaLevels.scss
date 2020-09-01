@@ -1,0 +1,47 @@
+@import '~../colors';
+
+.rows {
+    display: flex;
+    flex-direction: row;
+    margin: auto;
+    width: 100%;
+    justify-content: space-between;
+}
+
+@media only screen and (max-width: 768px) {
+
+    .levels-menu {
+        width: 100vw;
+    }
+
+    .rows {
+        flex-direction: column;
+    }
+
+    .menu-space {
+        width: 98%;
+        height: 65px;
+        margin: 12px 1%;
+    }
+
+    .menu-item .level {
+        line-height: 60px;
+    }
+
+    .menu-item .level:hover {
+        font-size: 1em;
+    }
+
+    .menu-face {
+        box-shadow: none !important;
+    }
+
+    .menu-item.is-flipped {
+        transform: rotateX(180deg);
+    }
+
+    .lock-icon {
+        padding: 0;
+    }
+
+}
